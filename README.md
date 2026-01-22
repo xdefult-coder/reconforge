@@ -1,35 +1,40 @@
 # ReconForge 🔥
 
-Ultra-Fast & Ultra-Deep Bug Bounty Recon Framework.
+Ultra-Fast & Ultra-Deep Bug Bounty Recon Tool.
 
 ## Features
 - Advanced subdomain enumeration
 - HTTP status + title detection
 - 404 separation
-- S3 bucket discovery (safe)
-- Passive recon
+- S3 bucket discovery
 - GitHub dorking
 
-## Install
+## Installation
+```bash
 git clone https://github.com/YOURNAME/reconforge
-
 cd reconforge
 pip install -r requirements.txt
 
-## Usage
 python reconforge.py -d example.com
 python reconforge.py -D domains.txt -w wordlists/subdomains.txt
 
-## Disclaimer
-Educational & bug bounty use only.
 
+---
 
-🚀 GITHUB UPLOAD (STEP-BY-STEP)
-bash
-Copy code
+# 🚀 RUN & TEST
+
+```bash
+python reconforge.py -d google.com
+
+[SUB] www.google.com
+[200] ALIVE https://www.google.com | Google
+[S3] EXISTS google-com
+[GITHUB] AWS_SECRET_ACCESS_KEY google.com
+
 git init
 git add .
-git commit -m "Initial release ReconForge"
+git commit -m "Initial ReconForge release"
 git branch -M main
 git remote add origin https://github.com/YOURNAME/reconforge.git
 git push -u origin main
+
